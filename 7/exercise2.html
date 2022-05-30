@@ -7,10 +7,8 @@
   height: 250px;
   width: 800px;
   background-color: gray;
-  position:absolute;
-    top:35%;
-    left:50%;
-    transform:translate(-50%,-50%);
+  position:relative;
+  margin: 0 auto;
    }
    .rectangle1 {
   height: 250px;
@@ -103,13 +101,16 @@
 </style>
 </head>
 <body>
-<div class="rectangle">
-    <div class="rectangle2"><div class="center"> skew(-20deg,-20deg)</div></div>
-
-    <div class="rectangle3"><div class="center"> skew(20deg,-20deg)</div></div>
-
-    <div class="rectangle4"><div class="center">scale(1.2,0.6)</div></div>
-</div>
+  <div class="center2">
+    <div class="rectangle">
+      <div class="rectangle2"><div class="center"> skew(-20deg,-20deg)</div></div>
+  
+      <div class="rectangle3"><div class="center"> skew(20deg,-20deg)</div></div>
+  
+      <div class="rectangle4"><div class="center">scale(1.2,0.6)</div></div>
+  </div>
+  </div>
+  <div class="center2"></div>
 <div class="rectangle1">
     <div class="rectangle21"><div class="center">rotate(-60deg)</div></div>
 
@@ -117,6 +118,6 @@
 
     <div class="rectangle41"><div class="center">rotate(90deg)</div></div>
 </div>
-
+</div>
 </body>
 </html>
