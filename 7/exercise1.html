@@ -1,0 +1,56 @@
+<html>
+<head>
+    
+<title>დავალება 7.1</title>
+<style>
+   .rectangle {
+  height: 250px;
+  width: 600px;
+  background-color: gray;
+  position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   }
+   .rectangle2 {
+  height: 200px;
+  width: 550px;
+  background-color: gray;
+  position:absolute;
+  border:2px solid black;
+
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   }
+   .square {
+       height: 50px;
+       width: 50px;
+       background-color: green;
+       border:2px solid red;
+       position:relative;
+
+       top:0;
+       left:0;
+      
+       animation: brunva 5s infinite;
+   }
+   @keyframes brunva {
+  0%   {transform: translate(0px,0px)}
+  25%  { transform: translate(547px,0px)}
+  50%  { transform: translate(547px,197px)}
+  75%  {transform: translate(0px,197px)}
+  100% { transform: translate(0px,0px)}
+}
+</style>
+</head>
+<body>
+<div class="rectangle">
+    <div class="rectangle2">
+    
+    </div>
+<div class="square"></div>
+</div>
+
+</body>
+</html>

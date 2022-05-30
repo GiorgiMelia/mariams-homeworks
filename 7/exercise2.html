@@ -1,0 +1,122 @@
+<html>
+<head>
+    
+<title>დავალება 7.2</title>
+<style>
+   .rectangle {
+  height: 250px;
+  width: 800px;
+  background-color: gray;
+  position:absolute;
+    top:35%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   }
+   .rectangle1 {
+  height: 250px;
+  width: 800px;
+  background-color: gray;
+  position:absolute;
+    top:65%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   }
+   .rectangle2 {
+       
+  height: 150px;
+  width: 200px;
+  background-color: white;
+  border:2px solid black;
+    position:relative;
+   top : 50px;
+   left: 50px;
+   transform: skew(-20deg,-20deg);
+   }
+   
+   .rectangle3 {
+       
+       height: 150px;
+       width: 200px;
+       background-color: white;
+       border:2px solid black;
+         position:absolute;
+        top : 50px;
+        left: 300px;
+        transform: skew(20deg,-20deg);
+        }
+    
+   .rectangle4 {
+       
+       height: 150px;
+       width: 200px;
+       background-color: white;
+       border:2px solid black;
+         position:absolute;
+        top : 50px;
+        left: 550px;
+        transform: scale(1.2,0.6);
+        }
+    
+   .rectangle21 {
+       
+       height: 150px;
+       width: 200px;
+       background-color: white;
+       border:2px solid black;
+         position:relative;
+        top : 50px;
+        left: 50px;
+        transform: rotate(-60deg);
+        }
+        
+        .rectangle31 {
+            
+            height: 150px;
+            width: 200px;
+            background-color: white;
+            border:2px solid black;
+              position:absolute;
+             top : 50px;
+             left: 300px;
+             transform: rotate(60deg);
+             }
+         
+        .rectangle41 {
+            
+            height: 150px;
+            width: 200px;
+            background-color: white;
+            border:2px solid black;
+              position:absolute;
+             top : 50px;
+             left: 550px;
+             transform: rotate(90deg);
+             }
+         
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+<div class="rectangle">
+    <div class="rectangle2"><div class="center"> skew(-20deg,-20deg)</div></div>
+
+    <div class="rectangle3"><div class="center"> skew(20deg,-20deg)</div></div>
+
+    <div class="rectangle4"><div class="center">scale(1.2,0.6)</div></div>
+</div>
+<div class="rectangle1">
+    <div class="rectangle21"><div class="center">rotate(-60deg)</div></div>
+
+    <div class="rectangle31"><div class="center">rotate(60deg)</div></div>
+
+    <div class="rectangle41"><div class="center">rotate(90deg)</div></div>
+</div>
+
+</body>
+</html>
