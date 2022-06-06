@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>დავალება 3.3</title>
+<style>.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: gray;
+}</style>
+</head>
+<body>
+
+<h1>დეტექტივის მოყვარულთა კლუბის სარეგისტრაციო გვერდი</h1>
+<p>
+   ანკეტის შევსების შემდეგ შეგეძლებათ ისარგებლოთ ელექტრონული ბიბლიოთეკით
+</p>
+<form >
+    <label for="fname"></label>
+    <input type="text" id="fname" name="fname">შეიყვანეთ რეგისტრაციის სახელი<br><br>
+    <label for="psw"></label>
+    <input type="text"  name="psw" id="psw" required>შეიყვანეთ პაროლი<br><br>
+    <label for="psw-repeat"></label>
+    <input type="text"  name="psw-repeat" id="psw-repeat" required>შეიყვანეთ პაროლი<br><br>
+    შეიყვანეთ თქვენი ასაკი:<br>
+       <input type="checkbox" class="checkbox-round"  id="age1" name="age1" value="20">
+    <label for="age1"> 20-ამდე</label><br>
+    <input type="checkbox" class="checkbox-round"  id="age2" name="age2" value="30">
+    <label for="age2"> 20-30</label><br>
+    <input type="checkbox" class="checkbox-round"  id="age3" name="age3" value="50">
+    <label for="age3"> 30-50</label><br>
+    <input type="checkbox" class="checkbox-round"  id="age4" name="age4" value="100">
+    <label for="age4"> 50 ზემოთ</label><br><br>
+    რომელ ენაზე კითხულობთ:<br>
+ 
+<input type="checkbox"  id="language1" name="language1" value="Georigan">
+    <label for="language1"> ქართული</label><br>
+    <input type="checkbox" id="language2" name="language2" value="English">
+    <label for="language2"> ინგლისური</label><br>
+    <input type="checkbox" id="language5" name="language5" value="German">
+    <label for="language5"> გერმანული</label><br>
+    <input type="checkbox" id="language3" name="language3" value="French">
+    <label for="language3"> ფრანგული</label><br>
+    <input type="checkbox" id="language4" name="language4" value="Rusiian:(">
+    <label for="language4"> რუსული</label><br><br>
+
+    <label for="books">წიგნის რომელი ფორმატია თქვენთვის მისაღები:</label>
+    <select id="books">
+  <option value="PDF">PDF</option>
+  <option value="word-file">word file</option>
+  <option value="physical">physical</option>
+</select>
+
+  <br> <br>
+  თქვენი საყვარელი ავტორი:<br>
+  <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+  <br> <br>
+    
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
