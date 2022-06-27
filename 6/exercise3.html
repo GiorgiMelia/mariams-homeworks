@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>დავალება 6.3</title>
+
+<style>
+    .rectangle {
+   height: 200px;
+   width: 800px;
+   background-color: gray;
+   position:relative;
+   margin: auto;
+   top: 13%;
+    }
+    .rectangle1 {
+   height: 200px;
+   width: 800px;
+   background-color: gray;
+   position:relative;
+   top: 15%;
+   margin: 10px auto;
+    }
+
+    .div1{
+        position:absolute;
+        margin-top: 25px;
+        margin-left: 50px;
+        height: 150px;
+        width: 150px;
+        background-color: white;
+        border: 2px solid black;
+        transition: width 8s, height 8s, transform 8s, background-color 8s;
+    }
+ 
+    .div2{
+        position: relative;
+        top: 75px;
+        margin-left: 50px;  
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        border: 2px solid black;
+        transition: width 6s, height 6s, transform 6s, background-color 6s;
+       
+    }
+    .div1:hover {
+        background-color: yellow;
+        width: 50px;
+        height: 50px;
+        transform: translate(500px,50px);
+      
+    }
+    
+    .div2:hover {
+        background-color: red;
+        width: 700px;
+        height: 150px;
+        transform: translate(0px,-50px);
+      
+    }
+ </style>
+</head>
+<body>
+
+<div class="rectangle"><div class="div1"></div></div>
+<div class="rectangle1"><Div class="div2"></Div></div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>დავალება 6.4</title>
+<style>
+    .rectangle {
+height: 300px;
+width: 700px;
+background-color: gray;
+position:relative;
+margin: auto;
+top: 13%;
+border: 2px solid black;
+ }
+
+   
+@keyframes anim1 {
+  from {width: 50px;}
+  to {width: 600px;}
+}
+
+@keyframes anim2 {
+    from {width: 50px;}
+  to {width: 600px;}
+}
+
+@keyframes anim3 {
+  0%   {transform: translate(0px,0px)}
+  25%  { transform: translate(580px,0px)}
+  50%  { transform: translate(580px,70px)}
+  75%  {transform: translate(0px,70px)}
+  100% { transform: translate(0px,0px)}
+}
+ .div1{
+        position:absolute;
+        margin-top: 40px;
+        margin-left: 50px;
+        height: 50px;
+        background-color: green;
+        border: 2px solid red;
+        animation: anim1 6s   infinite  ;
+       
+    }
+
+    .div2{
+        position:absolute;
+        margin-top: 110px;
+        margin-left: 50px;
+        height: 50px;
+        width: 50px;
+        background-color: yellow;
+        border: 2px solid blue;
+        transition: width 8s, height 8s, transform 8s, background-color 8s;
+        animation: anim2 6s   infinite  ;
+        animation-direction: alternate-reverse;
+    }
+
+
+    .div3{
+        position:absolute;
+        margin-top: 175px;
+        margin-left: 50px;
+        height: 50px;
+        width: 50px;
+        background-color: blue;
+        border: 2px solid red;
+        transition: width 8s, height 8s, transform 8s, background-color 8s;
+        animation: anim3 6s   infinite  ;
+    }
+        .line1 {
+            margin-top: 20px;
+            margin-left: 50px;
+            position: absolute;
+            border: 2px solid black;
+            width: 600px;
+            height: 0px;
+        }
+
+        .line2 {
+            margin-top: 95px;
+            margin-left: 50px;
+            position: absolute;
+            border: 2px solid black;
+            width: 600px;
+            height: 0px;
+        }
+        .line3 {
+            margin-top: 170px;
+            margin-left: 50px;
+            position: absolute;
+            border: 2px solid black;
+            width: 600px;
+            height: 0px;
+        }
+        .line4 {
+            margin-top: 240px;
+            margin-left: 110px;
+            position: absolute;
+            border: 2px solid black;
+            width: 500px;
+            height: 0px;
+        }
+
+ </style>
+</head>
+<body>
+<div class="rectangle"><Div class="line1"></Div><div class="div1"></div><div class="div2"></div><div class="div3"></div><Div class="line2"></Div><Div class="line3"></Div><Div class="line4"></Div></div></div>
+</body>
+</html>
